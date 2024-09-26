@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Employees</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Caso tenha um arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Funcionários</h1>
+        <table id="employee-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Cargo</th>
+                </tr>
+            </thead>
+            <tbody id="employee-table-body">
+                <!-- Funcionários serão carregados aqui via JavaScript -->
+            </tbody>
+        </table>
+        <br>
+        <button onclick="window.location.href='index.html'">Adicionar Funcionário</button> <!-- Botão para voltar à tela de adicionar -->
+    </div>
+
+    <script src="list-employees.js"></script>
+</body>
+</html>
