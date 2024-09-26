@@ -1,6 +1,6 @@
 const Employee = require('../models/Employee');
 
-// Função para listar todos os funcionários
+
 const getAllEmployees = async (req, res) => {
     try {
         const employees = await Employee.findAll();
@@ -11,7 +11,7 @@ const getAllEmployees = async (req, res) => {
     }
 };
 
-// Função para criar um novo funcionário
+
 const createEmployee = async (req, res) => {
     try {
         const { name, age, position } = req.body;
@@ -26,7 +26,7 @@ const createEmployee = async (req, res) => {
     }
 };
 
-// Exportando as funções
+
 module.exports = {
     getAllEmployees,
     createEmployee,

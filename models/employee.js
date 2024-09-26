@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-// Define o modelo Employee
+
 const Employee = sequelize.define('Employee', {
     name: {
         type: DataTypes.STRING,
@@ -16,11 +16,11 @@ const Employee = sequelize.define('Employee', {
         allowNull: false
     }
 }, {
-    tableName: 'employees', // Nome da tabela no banco
-    timestamps: false, // Desativa os campos createdAt e updatedAt
+    tableName: 'employees',
+    timestamps: false, 
 });
 
-// Sincroniza o modelo com o banco de dados (cria a tabela se não existir)
+
 sequelize.sync()
     .then(() => console.log('Tabela employees sincronizada'))
     .catch((err) => console.error('Erro ao sincronizar tabela:', err));

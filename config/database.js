@@ -1,10 +1,10 @@
 const { Sequelize } = require('sequelize');
 
-// Configuração do Sequelize
+
 const sequelize = new Sequelize('company', 'root', '123456', {
   host: 'localhost',
   dialect: 'mysql',
-  logging: false, // Desabilita os logs de SQL no console
+  logging: false,
 });
 
 sequelize.authenticate()
